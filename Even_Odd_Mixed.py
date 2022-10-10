@@ -1,0 +1,16 @@
+n=int(input())
+e_count=0
+o_count=0
+while(n>0):
+    r=n%10
+    if(r%2==0):
+        e_count+=1
+    else:
+        o_count+=1
+    n=n//10
+if(o_count==0):
+    print("Even")
+elif(e_count==0):
+    print("Odd")
+else:
+    print("Mixed")
