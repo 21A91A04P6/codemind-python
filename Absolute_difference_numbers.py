@@ -1,0 +1,18 @@
+a,b=map(int,input().split())
+c=0
+d=0
+g=0
+t=a
+x=10**b
+s=a%x
+while(t!=0):
+    r=t%10
+    d=d*10+r
+    t=t//10
+e=d%x
+while(e!=0):
+    f=e%10
+    g=g*10+f
+    e=e//10
+c=abs(g-s)
+print(c)
